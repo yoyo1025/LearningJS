@@ -1,3 +1,8 @@
+/*
+mutable 宣言後に変更可能
+immutable 宣言後に変更不可能
+*/
+
 let mutableText = 'let変更前';
 mutableText = 'let変更後';  // 変更可能
 console.log(mutableText)

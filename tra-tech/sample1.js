@@ -1,3 +1,9 @@
+/* 
+let でスコープを絞ることで保守しやすくなる
+var 関数内はどこからでも参照可能
+let ブロック内{}のみ参照可能
+*/
+
 const testScope = (scope) => {
     if (scope == 'function') {
         var functionScope = '関数スコープ内ならどこでも参照できます'
