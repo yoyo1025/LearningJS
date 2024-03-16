@@ -16,7 +16,7 @@ const setDomElementModule = (() => {
         },
         replaceImageSrc: (id) => {
             const element = document.getElementById(id)
-            element.setAttribute('src', 'assets/after.jpeg')
+            element.setAttribute('src', './assets/after.jpeg')
         },
         appendChildNode: (id) => {
             const element = document.getElementById(id)
