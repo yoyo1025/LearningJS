@@ -68,3 +68,12 @@ console.log(letNumber); // 200
 
 // let letNumber = 300; // → error!
 
+
+/**
+ * var の特徴
+ * 再代入できる、再定義できる
+ */
+
+var varNumber = 100;
+var varNumber = 200;
+console.log(varNumber); // 200
