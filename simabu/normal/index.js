@@ -23,3 +23,15 @@ const foo = document.getElementById("foo");
 const fooWidth2 = foo.offsetWidth;
 const fooHeight2 = foo.offsetHeight;
 const fooArea = fooWidth2 * fooHeight2;
+
+
+/**
+ * Q. どうやって変数を宣言するのか
+ * A. const 変数名 = 初期値;
+ *    let 変数名 = 初期値;
+ *    var 変数名 = 初期値; 
+ */
+
+const foo3 = 100;
+let bar = 200;
+var baz = 300;
