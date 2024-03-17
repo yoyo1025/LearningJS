@@ -54,3 +54,17 @@ console.log(obj.foo); // 123
 obj.foo = 456;
 
 console.log(obj.foo); // 456　→　123 から 456 に書き換わったので const は厳密には定数ではない
+
+
+/**
+ * let の特徴
+ * 再代入できる、再定義できない。
+ */
+
+let letNumber = 100;
+letNumber = 200;
+
+console.log(letNumber); // 200
+
+let letNumber = 300; // → error!
+
