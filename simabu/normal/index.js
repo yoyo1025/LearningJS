@@ -35,3 +35,22 @@ const fooArea = fooWidth2 * fooHeight2;
 const foo3 = 100;
 let bar = 200;
 var baz = 300;
+
+/**
+ * const の特徴
+ * 再代入できない、再定義できない
+ */
+
+const constNumber = 100;
+// その後、constNuber = 200; のように再代入はできない
+// const cnostNumber = 150; のように再定義できない
+
+const obj = {
+    foo: 123
+};
+
+console.log(obj.foo); // 123
+
+obj.foo = 456;
+
+console.log(obj.foo); // 456　→　123 から 456 に書き換わったので const は厳密には定数ではない
