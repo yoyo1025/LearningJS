@@ -59,3 +59,62 @@ function alertTweetable(text) {
 }
 
 alertTweetable("foo");
+
+// 4.
+// 関数式
+const isTweetable = function (text) {
+    return text.length <= 140;
+};
+
+console.log(isTweetable("foo"));
+
+// 5.
+/**
+ * function 高階関数(コールバック関数){
+ *  // 処理
+ *  コールバック関数();
+ * }
+ */
+
+const unfollow = function () {
+    console.log("フォローを外しました");
+}
+
+const cancelTweet = function () {
+    console.log("ツイートをキャンセルしました");
+}
+
+function confirmed(fn) {
+    if (window.confirm("実行しますか？")) {
+        fn();
+    }
+}
+
+// confirmed(cancelTweet);でも良いが下は匿名関数をコールバック関数に用いた例である
+confirmed(function () {
+    console.log("ツイートをキャンセルしました");
+})
+
+
+function confirmed2(fn) {
+    const input = window.prompt("実行しますか？")
+    fn(input); //fn(input) の input を confirmed2 の匿名関数の引数に渡すことで条件分岐できる
+}
+
+confirmed2(function (input) {
+    if (input == "実行") {
+        console.log("リポジトリを削除");
+    }
+});
+
+window.prompt("実行しますか？")
+
+const btn = document.getElementById("button");
+btn.addEventListener("click", function () {
+    console.log("フォロー解除");
+});
+
+const foods = ["にんじん", "じゃがいも", "たまねぎ"];
+foods.forEach(function (food) {
+    console.log(food);
+});
