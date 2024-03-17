@@ -66,5 +66,5 @@ letNumber = 200;
 
 console.log(letNumber); // 200
 
-let letNumber = 300; // → error!
+// let letNumber = 300; // → error!
 
