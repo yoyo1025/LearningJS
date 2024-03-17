@@ -13,7 +13,7 @@ let youtuber = {
         },
     },
     plan() { },
-    uoloadvideo() { },
+    uploadvideo() { },
 };
 
 export default youtuber;
